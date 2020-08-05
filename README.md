@@ -14,21 +14,16 @@
 
 ### 1차 전처리
 1. 마스크 생성(다른 물체를 제거하기 위해)
-- 메디안 블러
-- 침식연산
-- 이진화
+- 메디안 블러, 침식연산, 이진화
 - 칸투어 계산 후 영역크기가 가장넓은 칸투어 추출
 
 2. 뼈 강조
-- TOPHAT모폴로지
-- 가우시안 블러
-- 이진화
+- TOPHAT모폴로지, 가우시안 블러, 이진화
 
 ### 2차 전처리
 1. 마스크 생성(개선사항)
 - 이미지를 밝기를 분리할수 있는 LAB채널로 변환
-- 메디안 블러
-- 이진화
+- 메디안 블러, 이진화
 - 칸투어 계산 후 영역크기가 가장넓은 칸투어 추출   
 2. 마스크 기준으로 좌우 상하 영역 제거
 
@@ -59,7 +54,7 @@
 - ImageNet에서 좋은 성과를 내엇던 Xception, ResNet, vgg 들과 tjnet을 사용해서 모델학습
 - 모델 평가후 Weight 저장
 - 현재 MAE = 0.41년 (사용모델 tjnet)<br/>
-<img src="tjnet_model.JPG" width="500px" height="250px"></img><br/>
+<img src="tjnet_model.JPG" width="600px" height="250px"></img><br/>
 
 ### 원본 CNN
 - 데이터 양이 적기때문에 Kaggle의 데이터 약 12000장의 사진을 기준으로 학습
@@ -68,4 +63,4 @@
 
 ## PYQT
 ### 현재 진행중이므로 이미지만 첨부(2020.08.05기준)</br>
-<img src="BA_application.png" width="500px" height="500px"></img><br/>
+<img src="BA_application.png" width="600px" height="500px"></img><br/>
