@@ -45,7 +45,7 @@
 - 이미지 전처리 과정별로 모델 학습해보기
 - gender요소를 추가해서 model을 concatenate한 모델 만들기
 ### Data
-- 국내 소아과 X-ray 사진 (1~10세 남녀 총 391명)
+- 국내 소아과 X-ray 사진 (1~10세 남녀 총 ~~391명~~ 441명)
 - RSNA Bone Age Contest at Kaggle(<https://www.kaggle.com/kmader/rsna-bone-age>)
 
 ### ROI기반 CNN
@@ -53,7 +53,8 @@
 - input_data가 두개이므로 data_pipeline을 이용해 input값을 만들어주는 data_generator 만들기
 - ImageNet에서 좋은 성과를 내엇던 Xception, ResNet, vgg 들과 tjnet을 사용해서 모델학습
 - 모델 평가후 Weight 저장
-- 현재 MAE = 0.41년 (사용모델 tjnet)<br/>
+~~- 현재 MAE = 0.41년 (사용모델 tjnet)<br/>~~
+- 현재 MAE = 0.34년 (self_made)<br/>
 <img src="tjnet_model.JPG" width="600px" height="250px"></img><br/>
 
 ### 원본 CNN
